@@ -1,4 +1,4 @@
-{% set version = "0.1" %}
+{% set version = "0.2" %}
 
 package:
   name: glue-astronomy
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/glue-astronomy/glue-astronomy-{{ version }}.tar.gz
-  sha256: c31f8b1c95367a09c85e6719d4313fdb7a9acaf68d9abb96c6af68ebcdcde02d
+  sha256: 87eb231e383cbb89c90f0e30cdc6e0b6284e5802c01cb28f60ce0b843506c4d2
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
