@@ -1,4 +1,4 @@
-{% set version = "0.1" %}
+{% set version = "0.10.0" %}
 
 package:
   name: glue-astronomy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/glue-astronomy/glue-astronomy-{{ version }}.tar.gz
-  sha256: c31f8b1c95367a09c85e6719d4313fdb7a9acaf68d9abb96c6af68ebcdcde02d
+  sha256: 1fdfe750c72845c7df609887d0019b890e57cfa5ac50faa73fc8bc5262082aaf
 
 build:
   number: 0
@@ -16,19 +16,19 @@ build:
 requirements:
 
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
     - setuptools >=30.3
     - setuptools_scm
 
   run:
-    - python >=3.6
+    - python >=3.8
     - setuptools
     - astropy >=4.0
-    - glue-core >=1.0
-    - specutils >=0.7
-    - spectral-cube >=0.5
+    - glue-core >=1.6.1
     - regions >=0.4
+    - specutils >=0.7
+    - spectral-cube >=0.6.0
 
 test:
   imports:
