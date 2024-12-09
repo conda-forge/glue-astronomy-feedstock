@@ -9,7 +9,7 @@ source:
   sha256: 1fdfe750c72845c7df609887d0019b890e57cfa5ac50faa73fc8bc5262082aaf
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   noarch: python
 
@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=3.8
     - setuptools
-    - astropy >=4.0
+    - astropy-base >=4.0
     - glue-core >=1.6.1
     - regions >=0.4
     - specutils >=0.7
