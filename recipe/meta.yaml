@@ -24,7 +24,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - setuptools
-    - astropy >=4.0
+    - astropy-base >=4.0
     - glue-core >=1.6.1
     - regions >=0.4
     - specutils >=0.7
