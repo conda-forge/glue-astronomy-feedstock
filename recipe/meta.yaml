@@ -1,5 +1,5 @@
 {% set python_min = "3.10" %}
-{% set version = "0.14.0" %}
+{% set version = "0.15.0" %}
 
 package:
   name: glue-astronomy
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/glue-astronomy/glue_astronomy-{{ version }}.tar.gz
-  sha256: d73e89051549a2f58b34e9d899fb7679329cf07d00684a7b6eb47be865224838
+  sha256: ad71e34085e3ad78ce1ef2e84e97d86a84c9cef9287357b6130a25a4cc4abd97
 
 build:
   number: 0
